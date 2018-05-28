@@ -52,15 +52,22 @@ small, .font_small {font-size: 0.618em;}
 /*Hero*/
 
 #hero {
+    position: relative;
     padding: 30px;
     min-height: 300px;
-    font-weight: bold;
     background: url('/media/stars.jpg') center / cover;
     color: #f7f7f7;
 }
 
 #hero h2 {
     letter-spacing: 0.01em;
+}
+
+.signature {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }
 
 nav.nav-container {
@@ -97,12 +104,36 @@ nav .nav-right {
     right: 10px;
 }
 
+nav#nav-sidebar.open {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    background: grey;
+    z-index: 1001;
+    transition: all 0.4s;
+}
+
+nav#nav-sidebar.open {
+    left: 0;
+}
+
 
 /*Grid*/
 
 .grid {
     max-width: 900px;
     margin: 60px auto;
+}
+
+.grid:first-of-type {
+    margin-top: 0;
+}
+
+#grid-1 {
+    padding-top: 40px;
 }
 
 .grid-wrapper {
@@ -143,4 +174,41 @@ nav .nav-right {
 .grid-1-4 {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
+}
+
+
+#grid-2 .item {
+    height: 100px;
+    background: lightblue;
+}
+
+.gw {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.gw.gw-1 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 10px;
+}
+
+.gw.gw-2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+
+.gw.gw-3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+}
+
+
+@media (max-width: 420px) {
+    .grid-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .grid .space {
+        display: none;
+    }
 }

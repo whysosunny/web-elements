@@ -16,4 +16,8 @@ $(document).ready(function () {
     }
   });
 
+  $('#sidebar-nav-btn').click(function() {
+    $('#nav-sidebar').toggleClass('open');
+  })
+
 });
