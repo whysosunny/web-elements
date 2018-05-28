@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./libs/reset.css">
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="./css_partials/blog.css">
     <title>Web Elements</title>
 </head>
 <body>
@@ -21,9 +22,8 @@
 </div>
 <nav class="nav-container">
     <div class="nav-right">
-        <a class="nav-item" href="#grid-1">Grid 1</a>
-        <a class="nav-item" href="#grid-2">Grid 2</a>
-        <a class="nav-item" id="sidebar-nav-btn" href="#">Sidebar</a>
+        <a class="nav-item active" id="nav-link-blog" href="#">Blog</a>
+        <a class="nav-item" id="nav-link-elements" href="#">Elements</a>
     </div>
 </nav>
 
@@ -35,74 +35,158 @@
     </div>
 </nav>
 
+<div id="page-content">
+    <div class="nav-spacer"></div>
 
-<div id="grid">
-    <div id="grid-1" class="grid">
-        <h2 class="text-center">Grid 1</h2>
-        <div class="grid-wrapper grid-1-1">
-            <div class="grid-elem 1 space"></div>
-            <div class="grid-elem 2 space">
-                <div class="item"></div>
+    <div id="blog" class="page">
+        <h1>Blog</h1>
+        <div class="page-grid-wrapper">
+            <div class="blog-articles">
+                <article class="blog-post">
+                    <h3 class="blog-heading">
+                        5 Projects To Complete When Starting to Learn Front-End Web Development
+                    </h3>
+
+                    <h5 class="blog-focus">
+                        I started my journey into web development by practicing my new skills into developing as many
+                        templates as possible.
+                    </h5>
+
+                    <p class="blog-body">
+                        I encourage everyone around me to start learning web development. In doing so I have generated a few
+                        go-to projects that I send to people to really help them start honing their skills when starting on
+                        their journey. My hope is that this guide of projects helps new developers looking for some
+                        structure to their learning, or established developers reaching out to a friend with loose
+                        curriculum.
+                    </p>
+                </article>
+
+                <article class="blog-post">
+                    <h3 class="blog-heading">
+                        5 Projects To Complete When Starting to Learn Front-End Web Development
+                    </h3>
+
+                    <h5 class="blog-focus">
+                        I started my journey into web development by practicing my new skills into developing as many
+                        templates as possible.
+                    </h5>
+
+                    <p class="blog-body">
+                        I encourage everyone around me to start learning web development. In doing so I have generated a few
+                        go-to projects that I send to people to really help them start honing their skills when starting on
+                        their journey. My hope is that this guide of projects helps new developers looking for some
+                        structure to their learning, or established developers reaching out to a friend with loose
+                        curriculum.
+                    </p>
+                </article>
+
+                <article class="blog-post">
+                    <h3 class="blog-heading">
+                        5 Projects To Complete When Starting to Learn Front-End Web Development
+                    </h3>
+
+                    <h5 class="blog-focus">
+                        I started my journey into web development by practicing my new skills into developing as many
+                        templates as possible.
+                    </h5>
+
+                    <p class="blog-body">
+                        I encourage everyone around me to start learning web development. In doing so I have generated a few
+                        go-to projects that I send to people to really help them start honing their skills when starting on
+                        their journey. My hope is that this guide of projects helps new developers looking for some
+                        structure to their learning, or established developers reaching out to a friend with loose
+                        curriculum.
+                    </p>
+                </article>
             </div>
-            <div class="grid-elem 3 space">
-                <div class="item"></div>
-            </div>
-            <div class="grid-elem 4 space"></div>
-        </div>
-        <div class="grid-wrapper grid-1-2">
-            <div class="grid-elem 1 space">
-                <div class="item"></div>
-            </div>
-            <div class="grid-elem 2 space">
-                <div class="item"></div>
-            </div>
-            <div class="grid-elem 3 space">
-                <div class="item"></div>
+            <div id="blog-menu">
+                <div class="menu-box">
+                    <ul>
+                        <li><a href="#">5 Projects to complete when starting to learn front-end...</a></li>
+                        <li><a href="#">5 Projects to complete when starting to learn front-end...</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
 
-        <div class="grid-wrapper grid-1-3">
-            <div class="grid-elem 1 space">
-                <div class="item"></div>
+
+    </div>
+
+    <div id="elements" class="page hidden">
+        <div id="grid">
+            <div id="grid-1" class="grid">
+                <h2 class="text-center">Grid 1</h2>
+                <div class="grid-wrapper grid-1-1">
+                    <div class="grid-elem 1 space"></div>
+                    <div class="grid-elem 2 space">
+                        <div class="item"></div>
+                    </div>
+                    <div class="grid-elem 3 space">
+                        <div class="item"></div>
+                    </div>
+                    <div class="grid-elem 4 space"></div>
+                </div>
+                <div class="grid-wrapper grid-1-2">
+                    <div class="grid-elem 1 space">
+                        <div class="item"></div>
+                    </div>
+                    <div class="grid-elem 2 space">
+                        <div class="item"></div>
+                    </div>
+                    <div class="grid-elem 3 space">
+                        <div class="item"></div>
+                    </div>
+                </div>
+
+                <div class="grid-wrapper grid-1-3">
+                    <div class="grid-elem 1 space">
+                        <div class="item"></div>
+                    </div>
+                    <div class="grid-elem 2 space">
+                        <div class="item"></div>
+                    </div>
+                </div>
+                <div class="grid-wrapper grid-1-4">
+                    <div class="grid-elem 1 space"></div>
+                    <div class="grid-elem 2 space">
+                        <div class="item"></div>
+                    </div>
+                    <div class="grid-elem 3 space"></div>
+                </div>
             </div>
-            <div class="grid-elem 2 space">
-                <div class="item"></div>
+
+
+            <div id="grid-2" class="grid">
+                <h2 class="text-center">Grid 2</h2>
+                <div class="gw gw-1">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="gw gw-2">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="gw gw-3">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="gw gw-4">
+                    <div class="item"></div>
+                </div>
             </div>
-        </div>
-        <div class="grid-wrapper grid-1-4">
-            <div class="grid-elem 1 space"></div>
-            <div class="grid-elem 2 space">
-                <div class="item"></div>
-            </div>
-            <div class="grid-elem 3 space"></div>
         </div>
     </div>
 
 
-    <div id="grid-2" class="grid">
-        <h2 class="text-center">Grid 2</h2>
-        <div class="gw gw-1">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-        <div class="gw gw-2">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-        <div class="gw gw-3">
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-        <div class="gw gw-4">
-            <div class="item"></div>
-        </div>
-    </div>
 </div>
+
+
 <script
         src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="

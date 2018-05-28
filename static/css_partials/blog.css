@@ -1,0 +1,55 @@
+#blog h1 {
+    padding: 20px;
+    margin: 20px 0 0;
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blog-heading {
+    font-size: 32px;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.blog-focus {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #888888;
+}
+
+p.blog-body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+article.blog-post {
+    padding: 40px;
+    max-width: 600px;
+}
+
+#blog-menu {
+    position: relative;
+    padding: 20px;
+}
+
+#blog-menu .menu-box {
+    padding: 30px 20px;
+    background: #d8d8d8;
+    border-radius: 4px;
+    position: absolute;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 30px auto;
+}
+
+.menu-box li {
+    margin-bottom: 20px;
+}
+
+#blog.page .page-grid-wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
